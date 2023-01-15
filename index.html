@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function displayInput() {
+        var input = document.getElementById("language").value;
+        alert("You entered: " + input);}
+    </script>
+    <form>
+        <label for="language">What language was created to add interactivity to the Web?</label>
+        <input type="text" id="language" name="language">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) 
+        {event.preventDefault();
+        displayInput();});
+    </script>
+    <form>
+        <label for="library">Which code library would you prefer?</label>
+        <select id="library" name="library">
+          <option value="Vue">Vue</option>
+          <option value="React">React</option>
+          <option value="jQuery">jQuery</option>
+        </select>
+        <input type="submit" value="Submit">
+    <script>
+        alert(document.querySelector('.type'));
+    </script>
+    </form>
+    
+</body>
+</html>
